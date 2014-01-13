@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "bootswatch-yeti": {}
+    },
+    "packages": {
+      "bootswatch-yeti": {
+        "git": "https://github.com/mikeschaekermann/meteor-bootswatch-yeti.git",
+        "tag": "v0.3.7",
+        "commit": "98871b27baa7e8c080bc59ab4c870b99ec271386"
+      }
+    }
+  }
+}

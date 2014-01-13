@@ -1,0 +1,13 @@
+
+#nav-wrapper{
+	padding-bottom: 50px;
+}
+
+#main-wrapper{
+	text-align: center;
+	border-bottom: .5px solid gray;
+}
+
+.center{
+	text-align: center;
+}
