@@ -3,7 +3,7 @@ body, html, .container{
 }
 
 body{
-	background: url('/state_house.jpg') no-repeat center center;
+	background: url('/state_house.png') no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
