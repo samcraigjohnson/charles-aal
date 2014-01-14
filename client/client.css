@@ -1,3 +1,15 @@
+body, html, .container{
+	height:100%;
+}
+
+body{
+	background: url('/state_house.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 
 #nav-wrapper{
 	padding-bottom: 50px;
@@ -5,9 +17,46 @@
 
 #main-wrapper{
 	text-align: center;
+	height:98%;
+	min-height: 100%;
+}
+#top-row-home{
 	border-bottom: .5px solid gray;
+	height:85%;
+}
+
+#bottom-row-home{
+	background-color: white;
+	height:15%;
+}
+
+#focus-wrapper{
+	background-color: white;
+	height:90%;
 }
 
 .center{
 	text-align: center;
+}
+
+#headline, #subhead, #rep-text{
+	font-family: "Cardo", serif;
+}
+
+#headline{
+	font-size: 72pt;
+	color:white;
+}
+
+#subhead{
+	font-size: 45pt;
+	color:white;
+}
+
+.info-box{
+	border: 1px solid rgb(34,34,34);
+	background-color: rgb(34,34,34);
+	border-radius: 4px;
+	color:white;
+	margin-bottom: 15px;
 }

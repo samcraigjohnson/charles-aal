@@ -1,9 +1,10 @@
 <head>
 	<title>Charles D. Johnson</title>
+	<link href='http://fonts.googleapis.com/css?family=Cardo:700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-<div class="container">
+<div id="whole-wrapper" class="container">
 	{{> header}}
 	{{> main}}
 	{{> info}}
@@ -12,26 +13,33 @@
 
 <template name="main">
 		<div id="main-wrapper">
-		<div class="row">
+		<div class="row" id="top-row-home">
 			<div class="col-md-12">
-				<h1>Charles D. Johnson</h1>
-				<h3> - Attorney at Law - </h3>
+				<p id="headline"> Charles D. Johnson </p>
+				<p id="subhead"> - Attorney at Law - </p>
 			</div>
 		</div>
+		<div class="row" id="bottom-row-home">
+			<h4 id="rep-text" class="center"><em>Representing clients in all aspects of family law</em></h4>
+			</div>
 		</div>
 </template>
 
 <template name="info">
+		<div id="focus-wrapper">
 		<div class="row">
-			<div class="col-sm-4 col-md-4 col-lg-4">
-				<h5 class="center">Family Law</h5>
-			</div>
-			<div class="col-sm-4 col-md-4 col-lg-4">
-				<h5 class="center">Credentials</h5>
-			</div>
-			<div class="col-sm-4 col-md-4 col-lg-4">
-				<h5 class="center">Recommendations</h5>
-			</div>
+			{{info-box 'Divorce'}}
+			{{info-box 'Mediation'}}
+			{{info-box 'Child Custody'}}
+		</div>
+		<div class="row">
+			{{info-box 'Visitation'}}
+			{{info-box 'Guardianship'}}
+			{{info-box 'Child Support'}}
+		</div>
+		<div class="row">
+			{{info-box 'Adoption'}}
+		</div>
 		</div>
 </template>
 
@@ -50,7 +58,7 @@
 	  
 	  <div class="collapse navbar-collapse" id="cdj-nav-collapse">
 	    <ul class="nav navbar-nav navbar-right">
-	      <li><a href="#">About</a></li>
+	      <li><a href="#focus-wrapper">Focus</a></li>
 	      <li><a href="#">Contact</a></li>
 	    </ul>
 	  </div>
