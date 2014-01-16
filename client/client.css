@@ -5,47 +5,96 @@ body, html, .container{
 }
 
 body{
-	background: url('/state_house.png') no-repeat center center;
+	background: url('/state_house.png') repeat-y center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 
-.container-full{
-	
+.nav, .nav-default, .navbar-fixed-top{
+	background-color: black;
 }
 
-#nav-wrapper{
-	padding-bottom: 50px;
+.navbar{
+	padding-top: 1em;
+	height: 6em;
+}
+
+#phone-num, .nav-words{
+	font-weight: bold;
+	font-size: 15pt;
+}
+.nav-words{
+	display: block;
+	padding-top:35px !important;
+	padding-bottom: 33px !important;
+	margin-top:-24px;
+	margin-right: 20px;
+}
+.navbar-right{
+	height: 100%;
+}
+
+#about-wrapper{
+	height: 100%;
+	padding-top: 100px;
+}
+
+#about-sub-wrapper{
+	height:90%;
+
+	background-color: black;
+	color:white;
 }
 
 #main-wrapper{
 	text-align: center;
-	height:98%;
-	min-height: 100%;
-	margin: 0 auto;
+	height:100%;
   	width: 100%;
 }
 #top-row-home{
 	border-bottom: .5px solid gray;
-	height:85%;
+	height: 75%;
 }
 
 #bottom-row-home{
 	background-color: white;
-	height:15%;
+	height: 5%;
+
+}
+
+#line-break{
+	width: 85%;
+	border-bottom: 2px solid rgb(34,34,34);
+	margin-left: 7.5%;
+	margin-top: 25px;
+}
+
+#signet-wrapper{
+	background-color: white;
+	height:20%;
 }
 
 #focus-wrapper{
 	background-color: white;
-	height:90%;
+	padding-top: 120px;
+	height:100%;
+	width: 100%;
+}
+
+#focus-wrapper .row{
+	background-color: white;
 }
 
 img#signet{
-	width:165px;
-	height:125px;
-	margin-top: -25px;
+	width:266.67px;
+	height:200px;
+	margin-top: -105px;
+}
+
+#focus-wrapper .col-sm-4{
+	background-color: white;
 }
 
 .center{
@@ -57,7 +106,7 @@ img#signet{
 }
 
 #front-name{
-	margin-top: 100px;
+	margin-top: 12%;
 }
 
 #headline{
@@ -69,6 +118,9 @@ img#signet{
 	font-size: 25pt;
 	color:white;
 }
+#rep-text{
+	font-size: 1.5em;
+}
 
 .info-box{
 	border: 1px solid rgb(34,34,34);
@@ -76,4 +128,12 @@ img#signet{
 	border-radius: 4px;
 	color:white;
 	margin-bottom: 15px;
+}
+
+#fixed-home:focus{
+	outline:0;
+}
+
+#fixed-home{
+	z-index:10000;
 }

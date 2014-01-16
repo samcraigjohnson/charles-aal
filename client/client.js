@@ -4,4 +4,9 @@ Handlebars.registerHelper('info-box', function(name){
 	return new Handlebars.SafeString(html);
 });
 
-$('body').scrollspy({target: '#cdj-nav-collapse'});
+
+
+$(document).ready(function() {
+	$('body').scrollspy({target: '#cdj-nav-collapse'});
+	//$("#fixed-home").pin();
+});
