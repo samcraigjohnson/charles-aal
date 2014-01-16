@@ -1,5 +1,7 @@
 body, html, .container{
 	height:100%;
+	margin: 0 auto;
+  	width: 100%;
 }
 
 body{
@@ -10,6 +12,9 @@ body{
 	background-size: cover;
 }
 
+.container-full{
+	
+}
 
 #nav-wrapper{
 	padding-bottom: 50px;
@@ -19,6 +24,8 @@ body{
 	text-align: center;
 	height:98%;
 	min-height: 100%;
+	margin: 0 auto;
+  	width: 100%;
 }
 #top-row-home{
 	border-bottom: .5px solid gray;
@@ -35,6 +42,12 @@ body{
 	height:90%;
 }
 
+img#signet{
+	width:165px;
+	height:125px;
+	margin-top: -25px;
+}
+
 .center{
 	text-align: center;
 }
@@ -43,13 +56,17 @@ body{
 	font-family: "Cardo", serif;
 }
 
+#front-name{
+	margin-top: 100px;
+}
+
 #headline{
-	font-size: 72pt;
+	font-size: 52pt;
 	color:white;
 }
 
 #subhead{
-	font-size: 45pt;
+	font-size: 25pt;
 	color:white;
 }
 
