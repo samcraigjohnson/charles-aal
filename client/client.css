@@ -17,6 +17,7 @@ body, html, .container{
   left: -50%; 
   width: 200%; 
   height: 200%;
+  z-index:-10000;
 }
 #bg img {
   position: absolute; 
