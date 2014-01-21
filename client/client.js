@@ -9,4 +9,21 @@ Handlebars.registerHelper('info-box', function(name){
 $(document).ready(function() {
 	$('body').scrollspy({target: '#cdj-nav-collapse'});
 	//$("#fixed-home").pin();
+
+	$(".nav-words").on('click', function(e) {
+
+	   // prevent default anchor click behavior
+	   e.preventDefault();
+
+	   // store hash
+	   var hash = this.hash;
+
+	   // animate
+	   $('html, body').animate({
+	       scrollTop: $(this.hash).offset().top
+	     }, 500, function(){
+	       window.location.hash = hash;
+	     });
+
+	});
 });

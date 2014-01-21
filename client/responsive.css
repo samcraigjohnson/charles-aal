@@ -1,0 +1,7 @@
+@media(max-width: 768px), (max-height: 500px){
+	body, html, .container
+	{
+		height:auto;
+		word-wrap: break-word;
+	}
+}

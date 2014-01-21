@@ -5,11 +5,15 @@
 </head>
 
 <body>
+<div id="bg">
+	<img src="/state_house.png" id="" alt="">
+</div>
 <div id="whole-wrapper" class="container container-full">
 	{{> header}}
 	{{> main}}
 	{{> info}}
 	{{> about}}
+	{{> footer}}
 </div>
 </body>
 
@@ -19,11 +23,12 @@
 		<div class="col-sm-6">
 		<h1 id="about-header"> ABOUT <br/> CHARLES</h1>
 		</div>
-		<div class="full col-sm-6">
+		<div class="full container">
+		<div id="ed-info" class="col-sm-6">
 			<h1> EDUCATION</h1>
 			<ul>
-				<li>Robert H. McKinney School of Law: Indiana University, JD</li>
-				<li>Wabash College, B.A.</li>
+				<li>Indiana University Robert H. McKinney School of Law - Juris Doctor</li>
+				<li>Wabash College - Bachelor of Arts</li>
 			</ul>
 			<h1> LEGAL ORGANIZATIONS</h1>
 			<ul>
@@ -38,6 +43,7 @@
 			</ul>
 		</div>
 		</div>
+		</div>
 	</div>
 </template>
 
@@ -50,7 +56,7 @@
 				</div>
 			</div>
 			<div class="row" id="signet-wrapper">
-				<a href="#" id="fixed-home"><img id="signet"src="signet.png" /> </a>
+				<a href="#" id="fixed-home"><img id="signet" src="signet.png" /> </a>
 				<div id="line-break"></div>
 			</div>
 			<div class="row" id="bottom-row-home">
@@ -74,9 +80,14 @@
 			<div class="row">
 				{{info-box 'ADOPTION'}}
 				<div class="col-sm-8">
-					<h3 id="engagement-text"> <em>First Engagements are free of charge</em> </h3>
+					<h3 class="center"> <em>First Engagements are free of charge</em> </h3>
 				</div>
 			</div>
+			<div class="row">
+			<blockquote>
+			<h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec est non nisl sodales scelerisque non vulputate leo. Mauris interdum nunc at metus fermentum tincidunt. Etiam sed ipsum magna. Sed venenatis sapien vel tempus varius. In ultricies commodo felis at mattis. Nullam consectetur urna ut ante vulputate, nec accumsan erat pharetra. Etiam tincidunt mauris sed enim lobortis, a ullamcorper elit fermentum. Aenean tincidunt semper elit, et congue arcu facilisis vel. Cras nulla arcu, fermentum eu dui eu, euismod fermentum metus. Quisque euismod pellentesque nunc quis egestas. Sed blandit et felis eu dapibus.</h3>
+			</div>
+			</blockquote>
 		</div>
 </template>
 
@@ -97,9 +108,38 @@
 	    <ul class="nav navbar-nav navbar-right">
 	      <li><a class="nav-words" href="#focus-wrapper">FOCUS</a></li>
 	      <li><a class="nav-words" href="#about-wrapper">ABOUT</a></li>
-	      <li><a class="nav-words" href="#">CONTACT</a></li>
+	      <li><a class="nav-words" href="#contact-wrapper">CONTACT</a></li>
 	    </ul>
 	  </div>
 	</nav>
 	</div>
+</template>
+
+<template name="footer">
+	<footer class="site-footer">
+	<div id="contact-wrapper" class="container container-full">
+	<div class="row" id="contact-helpful">
+	<div class="col-md-6">
+		<h1>CONTACT INFORMATION</h1>
+		<h3>EMAIL: <a href="mailto:charles@johnsonfamilylaw.net"> CHARLES@JOHNSONFAMILYLAW.NET </a> </h3>
+		<h3>PHONE: <a href="tel:8123904906"> 812-390-4906 </a> </h3>
+	</div>
+	<div class="col-md-6">
+		<h1> HELPFUL LINKS </h1>
+		<ul>
+			<li><a href="http://www.indy.gov/egov/courts/Pages/home.aspx"> Marion County Courts</a></li>
+			<li><a href="http://www.hamiltoncounty.in.gov/department/index.php?structureid=13"> Hamilton County Courts</a></li>
+			<li><a href="http://www.in.gov/legislative/ic/2010/"> Indiana Code</a></li>
+			<li><a href="http://www.state.in.us/judiciary/rules/parenting/index.html"> Indiana Parenting Time Guidelines</a></li>
+			<li><a href="http://www.in.gov/judiciary/rules/child_support/"> Indiana Child Support Rules and Guidelines</a></li>
+			<li><a href="http://www.vnsi.org/pdfs/brochure%20-%20children%20cope%20with%20divorce%201-08.pdf"> Children Cope with Divorce Brochure</a></li>
+		</ul>
+	</div>
+	</div>
+	<div class="row" id="sign">
+		<div class="col-md-12">
+				<p> Site Created By  <a href="mailto:sjohnson540@gmail.com"> Sam Johnson &amp; Allison Milchling </a></p>
+		</div>
+	</div>
+	</footer>
 </template>
