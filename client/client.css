@@ -3,6 +3,11 @@ body, html, .container{
 	margin: 0 auto;
   	width: 100%;
 }
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+}
 
 body{
 	background: url('/state_house.png') repeat-y center center;
@@ -42,9 +47,8 @@ body{
 }
 
 #about-sub-wrapper{
-	height:90%;
-
-	background-color: black;
+	height: 100%;
+	background-color: #00688B;
 	color:white;
 }
 
@@ -64,6 +68,12 @@ body{
 
 }
 
+.full{ height: 100%;}
+
+#about-header{
+	border-bottom: 1px solid white;
+}
+
 #line-break{
 	width: 85%;
 	border-bottom: 2px solid rgb(34,34,34);
@@ -78,23 +88,14 @@ body{
 
 #focus-wrapper{
 	background-color: white;
-	padding-top: 120px;
-	height:100%;
-	width: 100%;
-}
-
-#focus-wrapper .row{
-	background-color: white;
+	height: 100%;
+	padding: 100px 15px 0 15px;
 }
 
 img#signet{
 	width:266.67px;
 	height:200px;
 	margin-top: -105px;
-}
-
-#focus-wrapper .col-sm-4{
-	background-color: white;
 }
 
 .center{
@@ -105,8 +106,12 @@ img#signet{
 	font-family: "Cardo", serif;
 }
 
+#engagement-text{
+	text-align: right;
+}
+
 #front-name{
-	margin-top: 12%;
+	margin-top: 130px;
 }
 
 #headline{
@@ -128,12 +133,9 @@ img#signet{
 	border-radius: 4px;
 	color:white;
 	margin-bottom: 15px;
+	padding-left: 5px;
 }
 
 #fixed-home:focus{
 	outline:0;
-}
-
-#fixed-home{
-	z-index:10000;
 }
