@@ -7,7 +7,7 @@ Handlebars.registerHelper('info-box', function(name){
 
 
 $(document).ready(function() {
-	$('body').scrollspy({target: '#cdj-nav-collapse'});
+	$('body').scrollspy({target: '.navbar'});
 	//$("#fixed-home").pin();
 
 	$(".nav-words").on('click', function(e) {

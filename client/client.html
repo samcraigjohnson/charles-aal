@@ -6,7 +6,7 @@
 
 <body>
 <div id="bg">
-	<img src="/state_house.png" id="" alt="">
+	<img src="/state_house.png" class="img-responsive" id="" alt="">
 </div>
 <div id="whole-wrapper" class="container container-full">
 	{{> header}}
@@ -20,22 +20,22 @@
 <template name="about">
 	<div id="about-wrapper" class="container container-full">
 		<div id="about-sub-wrapper">
-		<div class="col-sm-6">
-		<h1 id="about-header"> ABOUT <br/> CHARLES</h1>
+		<div class="col-sm-5 col-sm-offset-1">
+		<h1 class="big-bold-focus"> ABOUT </h1> <br/> <h1 id="about-header" class="big-bold-focus"> CHARLES </h1>
 		</div>
 		<div class="full container">
-		<div id="ed-info" class="col-sm-6">
-			<h1> EDUCATION</h1>
+		<div id="ed-info" class="col-sm-5 focus-text">
+			<h2 class="cardo"> EDUCATION</h1>
 			<ul>
 				<li>Indiana University Robert H. McKinney School of Law - Juris Doctor</li>
 				<li>Wabash College - Bachelor of Arts</li>
 			</ul>
-			<h1> LEGAL ORGANIZATIONS</h1>
+			<h2 class="cardo"> LEGAL ORGANIZATIONS</h1>
 			<ul>
 				<li>Indiana State Bar Association</li>
 				<li>Indianapolis Bar Association</li>
 			</ul>
-			<h1> HONORS</h1>
+			<h2 class="cardo"> HONORS</h1>
 			<ul>
 				<li>2013 Gold Level Volunteer - Robert H. McKinnery School of Law
 					Pro Bono Program</li>
@@ -57,10 +57,14 @@
 			</div>
 			<div class="row" id="signet-wrapper">
 				<a href="#" id="fixed-home"><img id="signet" src="signet.png" /> </a>
-				<div id="line-break"></div>
+				
 			</div>
 			<div class="row" id="bottom-row-home">
-				<p id="rep-text" class="center"><em>Representing clients in all aspects of family law</em></p>
+				<div id="bottom-text" class="col-md-12">
+					<p id="rep-text" class="center"><em>Representing Greater Indianapolis in all aspects of family law</em></p>
+					<p id="eng-text" ckass="center"><em>First engagements are free of charge</em></p>
+				</div>
+				<div id="line-break"></div>
 			</div>
 		</div>
 </template>
@@ -79,15 +83,16 @@
 			</div>
 			<div class="row">
 				{{info-box 'ADOPTION'}}
-				<div class="col-sm-8">
-					<h3 class="center"> <em>First Engagements are free of charge</em> </h3>
-				</div>
+				{{info-box 'NAME CHANGE'}}
+				{{info-box 'LEGAL SEPERATION'}}
 			</div>
 			<div class="row">
+			<div class="col-md-10 col-md-offset-1">
 			<blockquote>
-			<h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec est non nisl sodales scelerisque non vulputate leo. Mauris interdum nunc at metus fermentum tincidunt. Etiam sed ipsum magna. Sed venenatis sapien vel tempus varius. In ultricies commodo felis at mattis. Nullam consectetur urna ut ante vulputate, nec accumsan erat pharetra. Etiam tincidunt mauris sed enim lobortis, a ullamcorper elit fermentum. Aenean tincidunt semper elit, et congue arcu facilisis vel. Cras nulla arcu, fermentum eu dui eu, euismod fermentum metus. Quisque euismod pellentesque nunc quis egestas. Sed blandit et felis eu dapibus.</h3>
-			</div>
+			<h3 class="focus-text"> Charles D. Johnson is a family law attorney committed to supporting clients through their legal difficulties while maintaining compassion for their needs. Family law disputes are complex and overwhelming. We are committed to reaching resolutions that honor the best interest of the families and children we serve. </h3>
 			</blockquote>
+			</div>
+			</div>
 		</div>
 </template>
 
@@ -106,6 +111,7 @@
 	  
 	  <div class="collapse navbar-collapse" id="cdj-nav-collapse">
 	    <ul class="nav navbar-nav navbar-right">
+	      <li><a class="nav-words hidden" href="#main-wrapper">Home</a></li>
 	      <li><a class="nav-words" href="#focus-wrapper">FOCUS</a></li>
 	      <li><a class="nav-words" href="#about-wrapper">ABOUT</a></li>
 	      <li><a class="nav-words" href="#contact-wrapper">CONTACT</a></li>
@@ -119,22 +125,17 @@
 	<footer class="site-footer">
 	<div id="contact-wrapper" class="container container-full">
 	<div class="row" id="contact-helpful">
-	<div class="col-md-6">
-		<h1>CONTACT INFORMATION</h1>
-		<h3>EMAIL: <a href="mailto:charles@johnsonfamilylaw.net"> CHARLES@JOHNSONFAMILYLAW.NET </a> </h3>
-		<h3>PHONE: <a href="tel:8123904906"> 812-390-4906 </a> </h3>
-	</div>
-	<div class="col-md-6">
-		<h1> HELPFUL LINKS </h1>
-		<ul>
-			<li><a href="http://www.indy.gov/egov/courts/Pages/home.aspx"> Marion County Courts</a></li>
-			<li><a href="http://www.hamiltoncounty.in.gov/department/index.php?structureid=13"> Hamilton County Courts</a></li>
-			<li><a href="http://www.in.gov/legislative/ic/2010/"> Indiana Code</a></li>
-			<li><a href="http://www.state.in.us/judiciary/rules/parenting/index.html"> Indiana Parenting Time Guidelines</a></li>
-			<li><a href="http://www.in.gov/judiciary/rules/child_support/"> Indiana Child Support Rules and Guidelines</a></li>
-			<li><a href="http://www.vnsi.org/pdfs/brochure%20-%20children%20cope%20with%20divorce%201-08.pdf"> Children Cope with Divorce Brochure</a></li>
-		</ul>
-	</div>
+		<div class="container">
+		<div class="col-md-12">
+			<div class="col-md-4  col-md-offset-2">
+			<p id="contact-head">CONTACT</p>
+			</div>
+			<div id="contact-info" class="col-md-6">
+				<h3>EMAIL: <a href="mailto:charles@johnsonfamilylaw.net"> CHARLES@JOHNSONFAMILYLAW.NET </a> <br/>
+				PHONE: <a href="tel:8123904906"> 812-390-4906 </a> </h3>
+			</div>
+		</div>
+		</div>
 	</div>
 	<div class="row" id="sign">
 		<div class="col-md-12">
