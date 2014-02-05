@@ -2,6 +2,11 @@ body, html, .container{
 	height:100%;
 	margin: 0 auto;
   	width: 100%;
+	min-height:650px;
+}
+
+#contact-container, #contact-wrapper, #contact-helper{
+	min-height:100px !important;
 }
 
 body { font-smooth:always;
@@ -136,7 +141,9 @@ body { font-smooth:always;
 }
 #ed-info{
 	margin-top: 10px;
-	line-height: 2.2;
+	line-height: 2;
+	max-height:100%;
+	word-wrap: break-word;
 }
 
 #about-header{
