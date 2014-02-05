@@ -95,7 +95,7 @@ body { font-smooth:always;
 	text-align: center;
 	height:100%;
   	width: 100%;
-  	min-height: 800px;
+  	min-height: 600px;
 }
 #top-row-home{
 	border-bottom: .5px solid gray;
@@ -135,11 +135,11 @@ body { font-smooth:always;
 	margin-top: -10px;
 }
 
-#line-break{
-	width: 85%;
+#line-brake{
+	margin-left:70px;
+	margin-right:50px;
+	margin-top: -.5em;
 	border-bottom: 4px solid #00385F;
-	margin-left: 7.5%;
-	margin-top: 25px;
 }
 
 #signet-wrapper{
@@ -154,13 +154,15 @@ body { font-smooth:always;
 
 #focus-wrapper{
 	padding: 0 15px 0 15px;
+	padding-top: 90px;
+	margin-top: -90px;
 }
 
 #contact-wrapper{
 	padding-top: 0px;
 }
 .site-footer{
-	height: 250px;
+	height: 100px;
 }
 
 img#signet{

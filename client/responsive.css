@@ -4,4 +4,11 @@
 		height:auto;
 		word-wrap: break-word;
 	}
+
+	#headline{
+		font-size:3em;
+	}
+	#subhead{
+		font-size:1.5em;
+	}	
 }
