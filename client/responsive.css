@@ -19,5 +19,11 @@
 		width:170px;
 		height:130px;
 		margin-top:-60px;
+	}
+	.big-bold-focus{
+		font-size:3em;
+	}
+	#contact-head{
+		font-size:3em;
 	}	
 }
