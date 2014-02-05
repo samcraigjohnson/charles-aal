@@ -10,5 +10,14 @@
 	}
 	#subhead{
 		font-size:1.5em;
+	}
+	#top-row-home{
+		padding-bottom:40px;
+
+	}
+	img#signet{
+		width:170px;
+		height:130px;
+		margin-top:-60px;
 	}	
 }
