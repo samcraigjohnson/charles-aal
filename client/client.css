@@ -2,7 +2,7 @@ body, html, .container{
 	height:100%;
 	margin: 0 auto;
   	width: 100%;
-	min-height:650px;
+	min-height:800px;
 }
 
 #contact-container, #contact-wrapper, #contact-helper{
@@ -14,9 +14,9 @@ body { font-smooth:always;
 
 #charles-pic{
 	border: 7px solid white;
-	margin-left: 45px
+	margin-left: 45px;
 	margin-right: 244px;
-	width:50%
+	width:250px;
 }
 
 .container-full {
@@ -70,6 +70,7 @@ body { font-smooth:always;
 	font-size: 4em;
 	font-weight:900;
 	letter-spacing: 10px;
+	margin-left: 20px;
 }
 
 #phone-num, .nav-words, #subhead{
@@ -122,11 +123,20 @@ body { font-smooth:always;
 
 .full{ height: 100%;}
 
+#email-phone{
+ 	margin-left: 20px;
+}
+
 #contact-info{
 	margin-top: -2px;
 }
 
-#contact-head{
+#contact-break{
+	padding-top:25px;
+	background-color: none;
+}
+
+.contact-head{
 	font-size: 4.3em;
 	font-weight: bold;
 	text-align: right;
@@ -148,6 +158,7 @@ body { font-smooth:always;
 
 #about-header{
 	margin-top: -10px;
+
 }
 
 #line-brake{
@@ -162,10 +173,11 @@ body { font-smooth:always;
 	height:10%;
 }
 
-#focus-wrapper, #contact-wrapper{
+#focus-wrapper{
 	background-color: white;
 	height: 100%;
 }
+
 
 #focus-wrapper{
 	padding: 0 15px 0 15px;
@@ -176,8 +188,17 @@ body { font-smooth:always;
 #contact-wrapper{
 	padding-top: 0px;
 }
+
+#help-link-list{
+	padding-top: 23px;
+}
+
+.whiteback{
+	background-color: white;
+}
+
 .site-footer{
-	height: 100px;
+	height: 25%;
 }
 
 img#signet{
@@ -204,7 +225,7 @@ img#signet{
 }
 
 #subhead{
-	font-size: 2.5em;
+	font-size: 1.75em;
 	color:white;
 }
 
