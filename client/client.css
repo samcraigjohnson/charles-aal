@@ -5,6 +5,15 @@ body, html, .container{
 	min-height:800px;
 }
 
+#con-col {
+    text-align: right;
+}
+
+#avvo-badge img{
+    padding-bottom: 10px;
+}
+
+
 #contact-container, #contact-wrapper, #contact-helper{
 	min-height:100px !important;
 }
